@@ -22,27 +22,42 @@ export default function LinkCard({ link, index }: LinkCardProps) {
     }
   };
 
+  const hasImage = Boolean(link.image);
+
   return (
     <a
       href={link.url}
       onClick={handleClick}
       target={link.url !== '#' ? '_blank' : undefined}
       rel={link.url !== '#' ? 'noopener noreferrer' : undefined}
-      className="group flex items-center p-5 md:p-6 bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-2xl transition-all duration-300 hover:border-primary hover:shadow-lg hover:-translate-y-1 active:translate-y-0 no-underline"
+      className="group flex h-full flex-col px-3 pt-3 pb-4 md:px-4 md:pt-4 md:pb-5 bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-2xl transition-all duration-300 hover:border-primary hover:shadow-lg hover:-translate-y-1 active:translate-y-0 no-underline"
       style={{
         animation: `fadeInUp 0.5s ease-out ${index * 0.1}s both`,
       }}
     >
-      <div
-        className={`w-12 h-12 md:w-14 md:h-14 min-w-[3rem] md:min-w-[3.5rem] flex items-center justify-center bg-gradient-to-br ${colorMap[link.type]} rounded-xl mr-4 text-white group-hover:rotate-6 group-hover:scale-110 transition-transform duration-300`}
-      >
-        {link.icon}
-      </div>
-      <span className="flex-1 text-base md:text-lg font-medium text-gray-900 dark:text-white">
-        {link.title}
-      </span>
-      <div className="text-2xl text-gray-400 group-hover:text-primary group-hover:translate-x-1 transition-all duration-300">
-        →
+      {hasImage ? (
+        <div className="w-11/12 mx-auto aspect-square overflow-hidden rounded-xl mb-3 bg-gray-50 dark:bg-gray-900/40">
+          <img
+            src={link.image}
+            alt={link.title}
+            className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+          />
+        </div>
+      ) : (
+        <div className={`w-11/12 mx-auto aspect-square flex items-center justify-center bg-gradient-to-br ${colorMap[link.type]} rounded-xl mb-3 text-white group-hover:rotate-3 group-hover:scale-105 transition-transform duration-300`}>
+          <span className="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center">
+            {link.icon}
+          </span>
+        </div>
+      )}
+
+      <div className="flex flex-col flex-1 text-gray-900 dark:text-white">
+        <span className="text-xs md:text-sm font-semibold text-center leading-tight">{link.title}</span>
+        {link.description && (
+          <p className="mt-1 text-[12px] md:text-sm text-gray-600 dark:text-gray-300 leading-snug text-center line-clamp-3">
+            {link.description}
+          </p>
+        )}
       </div>
     </a>
   );
