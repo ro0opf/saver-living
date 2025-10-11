@@ -5,14 +5,14 @@ interface LinkCardProps {
   index: number;
 }
 
-const colorMap = {
-  instagram: 'from-pink-600 to-purple-600',
-  youtube: 'from-red-600 to-red-700',
-  blog: 'from-green-500 to-green-600',
-  kakao: 'from-yellow-400 to-yellow-500',
-  email: 'from-blue-500 to-blue-600',
-  website: 'from-indigo-500 to-purple-600',
-};
+const gradientPalette = [
+  'from-pink-600 to-purple-600',
+  'from-red-600 to-red-700',
+  'from-green-500 to-green-600',
+  'from-yellow-400 to-yellow-500',
+  'from-blue-500 to-blue-600',
+  'from-indigo-500 to-purple-600',
+];
 
 export default function LinkCard({ link, index }: LinkCardProps) {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -44,7 +44,9 @@ export default function LinkCard({ link, index }: LinkCardProps) {
           />
         </div>
       ) : (
-        <div className={`w-11/12 mx-auto aspect-square flex items-center justify-center bg-gradient-to-br ${colorMap[link.type]} rounded-xl mb-3 text-white group-hover:rotate-3 group-hover:scale-105 transition-transform duration-300`}>
+        <div
+          className={`w-11/12 mx-auto aspect-square flex items-center justify-center bg-gradient-to-br ${gradientPalette[index % gradientPalette.length]} rounded-xl mb-3 text-white group-hover:rotate-3 group-hover:scale-105 transition-transform duration-300`}
+        >
           <span className="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center">
             {link.icon}
           </span>

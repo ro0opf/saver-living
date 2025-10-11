@@ -1,6 +1,7 @@
 import type { LinkItem, ProfileData } from '../types';
 import profileImage from '../assets/profile.png';
 import showerHeadImage from '../assets/1.jpg';
+import blowerImage from '../assets/2.png';
 
 export const profileData: ProfileData = {
   name: '돈버는 살림',
@@ -13,7 +14,6 @@ export const links: LinkItem[] = [
     id: '1',
     title: '0001 고압 샤워기 헤드',
     url: 'https://link.coupang.com/a/cVTBGz',
-    type: 'instagram',
     image: showerHeadImage,
     description:
       '고압 미스트 샤워기로 틀자마자 느껴지는 확실한 수압 차이. 집중분사모드로 시원하게, 안개 분사모드로 부드럽게, 혼합 분사모드로 둘 다 잡았습니다. 버튼 한 번에 기분까지 바꾸는 ‘맞춤 샤워’ 완성.',
@@ -25,12 +25,14 @@ export const links: LinkItem[] = [
   },
   {
     id: '2',
-    title: 'YouTube',
-    url: '#',
-    type: 'youtube',
+    title: '0002 초강력 송풍기',
+    url: 'https://link.coupang.com/a/cVWbva',
+    image: blowerImage,
+    description:
+      '최대 10m 직진 바람과 고출력 팬 구조로 넓고 빠른 건조, 무선 ONE 버튼 즉시 작동, 복잡한 조작 없이 어디서나 사용, 인체공학적 그립·열배출 설계로 장시간도 안정적 운용',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+        <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
       </svg>
     ),
   },
@@ -38,7 +40,6 @@ export const links: LinkItem[] = [
     id: '3',
     title: '블로그',
     url: '#',
-    type: 'blog',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
@@ -49,7 +50,6 @@ export const links: LinkItem[] = [
     id: '4',
     title: '카카오톡 채널',
     url: '#',
-    type: 'kakao',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
         <path d="M12 3c5.799 0 10.5 3.664 10.5 8.185 0 4.52-4.701 8.184-10.5 8.184a13.5 13.5 0 0 1-1.727-.11l-4.408 2.883c-.501.265-.678.236-.472-.413l.892-3.678c-2.88-1.46-4.785-3.99-4.785-6.866C1.5 6.665 6.201 3 12 3z" />
@@ -60,7 +60,6 @@ export const links: LinkItem[] = [
     id: '5',
     title: '이메일 문의',
     url: '#',
-    type: 'email',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
         <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
@@ -71,7 +70,6 @@ export const links: LinkItem[] = [
     id: '6',
     title: '공식 웹사이트',
     url: '#',
-    type: 'website',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
         <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
@@ -82,7 +80,6 @@ export const links: LinkItem[] = [
     id: '7',
     title: '쿠팡 파트너스',
     url: '#',
-    type: 'website',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
         <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
@@ -93,7 +90,6 @@ export const links: LinkItem[] = [
     id: '8',
     title: '네이버 스마트스토어',
     url: '#',
-    type: 'website',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
         <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
@@ -104,7 +100,6 @@ export const links: LinkItem[] = [
     id: '9',
     title: '무신사 스토어',
     url: '#',
-    type: 'website',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
         <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
@@ -115,7 +110,6 @@ export const links: LinkItem[] = [
     id: '10',
     title: '알리익스프레스',
     url: '#',
-    type: 'website',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
         <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
@@ -126,7 +120,6 @@ export const links: LinkItem[] = [
     id: '11',
     title: '네이버 카페',
     url: '#',
-    type: 'blog',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
@@ -137,7 +130,6 @@ export const links: LinkItem[] = [
     id: '12',
     title: '카카오 오픈채팅',
     url: '#',
-    type: 'kakao',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
         <path d="M12 3c5.799 0 10.5 3.664 10.5 8.185 0 4.52-4.701 8.184-10.5 8.184a13.5 13.5 0 0 1-1.727-.11l-4.408 2.883c-.501.265-.678.236-.472-.413l.892-3.678c-2.88-1.46-4.785-3.99-4.785-6.866C1.5 6.665 6.201 3 12 3z" />
