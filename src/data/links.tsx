@@ -51,6 +51,20 @@ export const links: LinkItem[] = [
     ),
   },
   {
+    id: '13',
+    title: '0004 무타공 욕실코너 선반',
+    url: 'https://link.coupang.com/a/cV3G1Y',
+    image:
+      'https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/62af/2aad744c46fd9d2d8d4dc8e3e5e15568b8affddb7c0bc3c1fb0a2f5c14f7.jpg',
+    description:
+      '최대 10kg 버티는 초강력 접착으로 떨어짐 걱정 끝입니다. 넓어진 코너 선반과 두꺼운 알루미늄, 물기에도 튼튼합니다. 수건걸이·다용도 고리 포함, 욕실 수납을 한 번에 정리하세요.',
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
+      </svg>
+    ),
+  },
+  {
     id: '4',
     title: '카카오톡 채널',
     url: '#',
