@@ -4,9 +4,11 @@ import type { ProfileData } from '../types';
 interface ProfileProps {
   data: ProfileData;
   onShare?: () => void;
+  searchTerm: string;
+  onSearchChange: (value: string) => void;
 }
 
-export default function Profile({ data, onShare }: ProfileProps) {
+export default function Profile({ data, onShare, searchTerm, onSearchChange }: ProfileProps) {
   const [imageUrl, setImageUrl] = useState(data.imageUrl);
 
   useEffect(() => {
@@ -25,7 +27,7 @@ export default function Profile({ data, onShare }: ProfileProps) {
   };
 
   return (
-    <div className="text-center mb-12 animate-fade-in">
+    <div className="text-center mb-8 animate-fade-in">
       <div className="relative flex justify-center mb-6">
         {onShare && (
           <button
@@ -58,6 +60,16 @@ export default function Profile({ data, onShare }: ProfileProps) {
       <p className="text-xs md:text-sm text-gray-500 dark:text-gray-400 mt-4">
         비즈니스 문의 : <a href="mailto:d3bussi@gmail.com" className="underline hover:text-primary">d3bussi@gmail.com</a>
       </p>
+      <div className="mt-4 flex justify-center">
+        <input
+          type="search"
+          value={searchTerm}
+          onChange={(e) => onSearchChange(e.target.value)}
+          placeholder="아이템 제목 또는 설명으로 검색하세요"
+          className="w-full max-w-md px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-full bg-white dark:bg-gray-900 text-sm md:text-base text-gray-700 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-primary transition-shadow duration-200"
+          aria-label="아이템 검색"
+        />
+      </div>
     </div>
   );
 }

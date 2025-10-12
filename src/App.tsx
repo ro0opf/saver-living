@@ -6,6 +6,7 @@ import { profileData, links } from './data/links';
 
 function App() {
   const [showToast, setShowToast] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
 
   const handleShare = async () => {
     const shareData = {
@@ -38,22 +39,44 @@ function App() {
     setTimeout(() => setShowToast(false), 3000);
   };
 
+  const normalizedSearch = searchTerm.trim().toLowerCase();
+  const filteredLinks = normalizedSearch
+    ? links.filter((link) => {
+        const titleMatch = link.title.toLowerCase().includes(normalizedSearch);
+        const descriptionMatch = link.description
+          ? link.description.toLowerCase().includes(normalizedSearch)
+          : false;
+        return titleMatch || descriptionMatch;
+      })
+    : links;
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 dark:from-gray-900 dark:via-purple-900 dark:to-violet-900 p-5 md:p-10 transition-colors duration-300">
       <FloatingMessage />
 
       <div className="max-w-2xl mx-auto bg-white dark:bg-gray-800 rounded-3xl shadow-2xl p-8 md:p-12 lg:p-14 transition-colors duration-300 mt-12">
-        <Profile data={profileData} onShare={handleShare} />
+        <Profile
+          data={profileData}
+          onShare={handleShare}
+          searchTerm={searchTerm}
+          onSearchChange={setSearchTerm}
+        />
 
-        <div className="grid gap-4 grid-cols-2 lg:grid-cols-3 mb-8">
-          {links.map((link, index) => (
-            <LinkCard key={link.id} link={link} index={index} />
-          ))}
-        </div>
+        {filteredLinks.length > 0 ? (
+          <div className="grid gap-2 grid-cols-2 lg:grid-cols-3 mb-8">
+            {filteredLinks.map((link, index) => (
+              <LinkCard key={link.id} link={link} index={index} />
+            ))}
+          </div>
+        ) : (
+          <p className="mb-8 text-center text-sm md:text-base text-gray-500 dark:text-gray-400">
+            검색 결과가 없습니다.
+          </p>
+        )}
 
         <div className="border-t border-gray-200 dark:border-gray-700 pt-6">
           <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-            © 2024 돈버는 살림. All rights reserved.
+            © 2025 돈버는 살림. All rights reserved.
           </p>
         </div>
       </div>
