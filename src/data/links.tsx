@@ -65,6 +65,20 @@ export const links: LinkItem[] = [
     ),
   },
   {
+    id: '14',
+    title: '0005 감성 인테리어 사료통',
+    url: 'https://link.coupang.com/a/cV4l7w',
+    image:
+      'https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/5eb6/fbbe208ba1f5c6e346f8f8faa08d5c614d2a96973c3d34b84a5da720797c.jpg',
+    description:
+      '손잡이 당김 한 번에 정량 급여 끝. 창문형 저장통으로 사료 잔량 한눈에. 모던 블랙 디자인으로 집 분위기까지 업!',
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
+      </svg>
+    ),
+  },
+  {
     id: '4',
     title: '카카오톡 채널',
     url: '#',
