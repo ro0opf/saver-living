@@ -23,6 +23,7 @@ export default function LinkCard({ link, index }: LinkCardProps) {
   };
 
   const hasImage = Boolean(link.image);
+  const fallbackLabel = link.title.replace(/\s+/g, '').slice(0, 2) || '링크';
 
   return (
     <a
@@ -47,8 +48,8 @@ export default function LinkCard({ link, index }: LinkCardProps) {
         <div
           className={`w-10/12 mx-auto aspect-square flex items-center justify-center bg-gradient-to-br ${gradientPalette[index % gradientPalette.length]} rounded-xl mb-3 text-white group-hover:rotate-3 group-hover:scale-105 transition-transform duration-300`}
         >
-          <span className="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center">
-            {link.icon}
+          <span className="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center text-base md:text-lg font-semibold tracking-wide uppercase">
+            {fallbackLabel}
           </span>
         </div>
       )}
