@@ -79,6 +79,20 @@ export const links: LinkItem[] = [
     ),
   },
   {
+    id: '15',
+    title: '0006 코코넛향 남성용 립밤',
+    url: 'https://link.coupang.com/a/cWxDmP',
+    image:
+      'https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/630515115038135-51a57bf1-34a7-410f-a581-db4fc785b51d.jpg',
+    description:
+      '자연스러운 발색에 입술 본연의 혈색을 살립니다. 꿀·시어버터·오일 블렌드로 오래 촉촉하며 끈적임이 없습니다. 은은한 향과 플럼핑 효과로 남자도 부담 없이 세련된 인상을 완성합니다.',
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
+      </svg>
+    ),
+  },
+  {
     id: '4',
     title: '카카오톡 채널',
     url: '#',
