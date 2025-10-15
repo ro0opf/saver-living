@@ -71,4 +71,13 @@ export const links: LinkItem[] = [
     description:
       '강력한 미끄럼방지와 두툼한 쿠션으로 욕실에서도 안전하고 편안합니다. EVA 방수 소재와 배수구 설계로 물기 제거가 빨라 위생적입니다. 가볍고 유연해 오래 신어도 부담 없고, 집·업장 다용도로 딱입니다.',
   },
+  {
+    id: '8',
+    title: '0008 다용도 면도기 거치대',
+    url: 'https://link.coupang.com/a/cWMRlE',
+    image:
+      'https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/803a/5bc545f26f4bbfec559b2e55dad836f8f544b6fa972e49d5e9a766b31712.jpg',
+    description:
+      '벽부착으로 칫솔·컵·면도기까지 깔끔히 정리됩니다. 304 스테인리스와 물빠짐 설계로 위생적이고 튼튼합니다. 강력 접착으로 떨어짐 걱정 없이 욕실이 달라집니다.',
+  },
 ];
