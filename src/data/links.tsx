@@ -98,4 +98,13 @@ export const links: LinkItem[] = [
     description:
       '니트릴 소재로 얇지만 질기고 탄력 있어 오래가요. 설거지·청소·손질까지 미끄럼 적고 착 붙어 편해요. 3개 세트로 용도 분리 깔끔, 재구매 의사 확실해요.',
   },
+  {
+    id: '11',
+    title: '0011 제로 스크래치 수세미',
+    url: 'https://link.coupang.com/a/c9n6ut',
+    image:
+      'https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/449485084112107-2b0e5809-01e2-44ec-8793-c3f17f8a2f36.jpg',
+    description:
+      '코팅팬도 유리컵도 기스 없이 쓱 닦입니다. 부드럽지만 세정력 탄탄해 기름때·찌꺼기도 개운합니다. 항균 스펀지로 냄새 덜하고, 8개입 가성비까지 챙기세요.',
+  },
 ];
