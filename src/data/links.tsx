@@ -89,4 +89,13 @@ export const links: LinkItem[] = [
     description:
       '한 번에 딱 잘라 깨끗하게 여는 컷팅기입니다. 껍질 파편 없이 노른자 보존, 위생적으로 사용해요. 홈베이킹·자취방 필수템, 초보도 성공합니다.',
   },
+  {
+    id: '10',
+    title: '0010 니트릴 고무장갑',
+    url: 'https://link.coupang.com/a/c9mwXi',
+    image:
+      'https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/41c9/4fb14dcc83c823fe999755e3d1743cdb51d9c934126a6e433a850449f8a4.png',
+    description:
+      '니트릴 소재로 얇지만 질기고 탄력 있어 오래가요. 설거지·청소·손질까지 미끄럼 적고 착 붙어 편해요. 3개 세트로 용도 분리 깔끔, 재구매 의사 확실해요.',
+  },
 ];
