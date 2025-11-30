@@ -80,4 +80,13 @@ export const links: LinkItem[] = [
     description:
       '벽부착으로 칫솔·컵·면도기까지 깔끔히 정리됩니다. 304 스테인리스와 물빠짐 설계로 위생적이고 튼튼합니다. 강력 접착으로 떨어짐 걱정 없이 욕실이 달라집니다.',
   },
+  {
+    id: '9',
+    title: '0009 1초 계란 오프너',
+    url: 'https://link.coupang.com/a/c9j4dF',
+    image:
+      'https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/9c59/1c71da52f0a7b3c7d6433b56ca202fbbec52832bd86e6dab0cf116d60ff0.jpg',
+    description:
+      '한 번에 딱 잘라 깨끗하게 여는 컷팅기입니다. 껍질 파편 없이 노른자 보존, 위생적으로 사용해요. 홈베이킹·자취방 필수템, 초보도 성공합니다.',
+  },
 ];
