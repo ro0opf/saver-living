@@ -107,4 +107,31 @@ export const links: LinkItem[] = [
     description:
       '코팅팬도 유리컵도 기스 없이 쓱 닦입니다. 부드럽지만 세정력 탄탄해 기름때·찌꺼기도 개운합니다. 항균 스펀지로 냄새 덜하고, 8개입 가성비까지 챙기세요.',
   },
+  {
+    id: '12',
+    title: '0012 사다리 타는 산타',
+    url: 'https://link.coupang.com/a/dadu67',
+    image:
+      'https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/6751/0a1e9cfedbdd0ea420f45a9534a8cc8a6e94a3ea9f01a06d318b42fe7776.jpg',
+    description:
+      '5초 설치로 문틀·벽·트리에 간편하게 걸어요. 아기자기하지만 존재감 확실, 공간이 살아납니다. 카페·사무실·집 모두 찰떡, 가성비 퀄리티 굿.',
+  },
+  {
+    id: '13',
+    title: '0013 USB 리모컨 줄조명',
+    url: 'https://link.coupang.com/a/dadv0j',
+    image:
+      'https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/1a36/59640816e507f42eb54508289f38ff0e4d646c787e3991b787cc128a8233.jpg',
+    description:
+      '커튼에 착, 5분 만에 크리스마스 분위기 완성해요. USB·건전지 겸용과 리모컨 8모드로 어디서나 쉬워요. 웜화이트 감성으로 집·카페 포토존 되는 가성비 조명이에요.',
+  },
+  {
+    id: '14',
+    title: '0014 크리스마스 트리 풀세트',
+    url: 'https://link.coupang.com/a/dadxi5',
+    image:
+      'https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/0122/15c03b11122490bb0b51d98fb8012ef77d4e0926e4f7fc2b27f25e87340d.jpg',
+    description:
+      '트리·장식·LED 풀세트로 연말 감성 한방에 완성돼요. USB 겸용 전구와 풍성한 가지로 사진맛이 살아나요. 가성비 갑, 집·선물 모두 만족한 재구매템이에요.',
+  },
 ];
